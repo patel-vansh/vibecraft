@@ -1,4 +1,4 @@
-# 🌱 CodeMetrics Dashboard
+# 🌱 Vibecraft
 
 A responsive, theme-toggle-enabled dashboard built with **React + Vite**, displaying key programming metrics like GitHub contributions, code coverage, and lines of code. Inspired by carbon tracking visuals and animated UI elements.
 
