@@ -1,0 +1,97 @@
+.loader-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: background 1s ease;
+}
+
+.progress-digits {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+    color: var(--text-color);
+  font-size: 5rem;
+  font-family: monospace;
+  z-index: 10;
+  display: flex;
+  gap: 0.2em;
+}
+
+.digit-text {
+  transition: transform 0.2s;
+}
+
+.progress-bar {
+  height: 50px;
+  width: 300px;
+  background-color: var(--section-bg);
+  overflow: hidden;
+  position: relative;
+}
+
+.fill-main {
+  background-color: var(--accent-color);
+  height: 100%;
+  transition: width 0.2s;
+}
+
+.bar-break-wrapper {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transform-origin: center;
+}
+
+.bar-break-wrapper.move {
+    animation: moveL 0.6s forwards, fillR 2s forwards 0.8s;
+}
+
+.bar-piece {
+  height: 50px;
+  background: var(--accent-color);
+  transition: transform 0.6s ease, width 0.8s ease, height 0.8s ease;
+}
+
+.bar-piece.large {
+  width: 260px;
+  transform-origin: right top;
+  transform: rotate(0deg);
+}
+
+.bar-piece.large.expand {
+  animation: rotateR 0.6s forwards;
+}
+
+.bar-piece.small {
+  width: 120px;
+  background: var(--accent-color);
+}
+
+@keyframes moveL {
+    to {
+        transform: translate(-25px, 25px);
+    }
+}
+
+@keyframes rotateR {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes fillR {
+  to {
+    scale: 25;
+    transform: rotate(20deg) translate(-25px, 150px);
+    background: var(--bg-color);
+    opacity: 0;
+  }
+}
