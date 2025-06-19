@@ -6,6 +6,7 @@ import FeatureCards from './FeatureCards'
 import GraphSection from './GraphSection'
 import ImageCarousel from './ImageCarousel'
 import DevStats from './DevStats'
+import RippleEffect from './RippleEffect'
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <GraphSection />
       <ImageCarousel />
       <DevStats />
+      <RippleEffect />
     </div>
   )
 }
