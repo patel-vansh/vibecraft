@@ -23,7 +23,7 @@ function App() {
     <div className={darkMode ? 'dark' : ''}>
       <nav className="navbar">
         <div className="nav-left">
-          <span className="nav-icon"><img width="40" src="public/logo.png" alt="Vibecraft Logo" /></span>
+          <span className="nav-icon"><img width="40" src="logo.png" alt="Vibecraft Logo" /></span>
           <span className="site-name">Vibecraft</span>
         </div>
         <button
