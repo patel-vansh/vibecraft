@@ -208,6 +208,11 @@
   animation: fadeInCard 0.2s;
 }
 
+.featurecards-headline {
+    text-align: center;
+    font-size: 7rem;
+  }
+
 /* Unique positioning for each card */
 .featurecards-card-reports {
   left: 0;
@@ -325,8 +330,5 @@
     margin-bottom: 1.5rem;
     left: 0;
     top: 0;
-  }
-  .featurecards-headline {
-    text-align: center;
   }
 }

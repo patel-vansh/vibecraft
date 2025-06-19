@@ -14,7 +14,7 @@ const ImageCarousel = () => {
           <div className="carousel-item" key={item.id}>
             <img src={item.src} alt={item.alt} />
             <div className="hover-overlay">
-              <span>Add to Cart</span>
+              <span>View Details</span>
             </div>
           </div>
         ))}

@@ -36,7 +36,7 @@ export default function GraphSection() {
       style={{
         width: "100%",
         height: "600px",
-        background: "#f0f0f0",
+        background: "#fafafa",
         padding: "2rem 0 ",
         display: "flex",
         alignItems: "center",

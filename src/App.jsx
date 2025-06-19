@@ -5,6 +5,7 @@ import Loader from './Loader'
 import FeatureCards from './FeatureCards'
 import GraphSection from './GraphSection'
 import ImageCarousel from './ImageCarousel'
+import DevStats from './DevStats'
 
 
 function App() {
@@ -19,28 +20,23 @@ function App() {
     <Loader darkMode={darkMode} onFinish={() => setLoading(false)} />
   ) : (
     <div className={darkMode ? 'dark' : ''}>
-      <button
-        onClick={() => setDarkMode(dm => !dm)}
-        style={{
-          position: 'fixed',
-          top: 20,
-          right: 20,
-          zIndex: 10000,
-          padding: '0.5em 1em',
-          borderRadius: '1em',
-          border: 'none',
-          background: 'var(--nav-bg)',
-          color: 'var(--text-color)',
-          cursor: 'pointer',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.07)'
-        }}
-        aria-label="Toggle dark mode"
-      >
-        {darkMode ? '🌙 Dark' : '☀️ Light'}
-      </button>
+      <nav className="navbar">
+        <div className="nav-left">
+          <span className="nav-icon"><img width="40" src="public/logo.png" alt="Vibecraft Logo" /></span>
+          <span className="site-name">Vibecraft</span>
+        </div>
+        <button
+          onClick={() => setDarkMode(dm => !dm)}
+          className="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          {darkMode ? '☀️ Light' : '🌙 Dark'}
+        </button>
+      </nav>
       <FeatureCards />
       <GraphSection />
       <ImageCarousel />
+      <DevStats />
     </div>
   )
 }

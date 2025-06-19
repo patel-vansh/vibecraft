@@ -112,7 +112,7 @@ function FeatureCards() {
         )}
 
         {/* Headline */}
-        <h1 className="featurecards-headline">
+        <span className="featurecards-headline">
           Create{' '}
           <span
             className={`featurecards-hoverable-word${showCards ? ' active' : ''}`}
@@ -126,7 +126,7 @@ function FeatureCards() {
           <span className={`featurecards-fade${showCards ? ' faded' : ''}`}>
             dashboards <span className="featurecards-amp">&amp;</span> consolidations
           </span>
-        </h1>
+        </span>
       </div>
 
       {/* Subheadline */}
