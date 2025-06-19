@@ -2,11 +2,9 @@ import React from "react";
 import "./ImageCarousel.css";
 
 const images = [
-  { id: 1, src: "https://unsplash.com/photos/164_6wVEHfI/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzMxNDM4fA&force=true&w=640", alt: "Shoes" },
-  { id: 2, src: "https://unsplash.com/photos/164_6wVEHfI/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzMxNDM4fA&force=true&w=640", alt: "Bag" },
-  { id: 3, src: "https://unsplash.com/photos/164_6wVEHfI/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzMxNDM4fA&force=true&w=640", alt: "Watch" },
-  { id: 4, src: "https://unsplash.com/photos/164_6wVEHfI/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzMxNDM4fA&force=true&w=640", alt: "T-shirt" },
-  { id: 5, src: "https://unsplash.com/photos/164_6wVEHfI/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzMxNDM4fA&force=true&w=640", alt: "Jacket" },
+  { id: 1, src: "https://unsplash.com/photos/dMUt0X3f59Q/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzM2ODkxfA&force=true&w=640", alt: "Code 1" },
+  { id: 2, src: "https://unsplash.com/photos/ieic5Tq8YMk/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzM1OTM4fA&force=true&w=640", alt: "Code 2" },
+  { id: 3, src: "https://unsplash.com/photos/xrVDYZRGdw4/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNzUwMzM2ODQyfA&force=true&w=640", alt: "Code 3" }
 ];
 
 const ImageCarousel = () => {

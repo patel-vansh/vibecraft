@@ -32,15 +32,26 @@ const data = [
 
 export default function GraphSection() {
   return (
-    <div style={{ width: "100%", height: "600px", marginTop: "2rem" }}>
+    <div
+      style={{
+        width: "100%",
+        height: "600px",
+        background: "#f0f0f0",
+        padding: "2rem 0 ",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+      }}
+    >
       <h2 style={{ textAlign: "center", color: "#5b2c2c" }}>
         Embodied Carbon Emissions <br />
         <small style={{ fontWeight: "normal", color: "#888" }}>
-            Intensity measured by kgCO<sub>2</sub>e/m²
+          Intensity measured by kgCO<sub>2</sub>e/m²
         </small>
-        </h2>
+      </h2>
 
-      <ResponsiveContainer width="95%" height="100%">
+      <ResponsiveContainer width="80%" height="80%">
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="name" />
